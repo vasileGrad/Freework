@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-        <a href="#"><img src="images/Freework_logo.png" class="freework-img" /></a>
+        <a href="#"><img src="/images/Freework_logo.png" class="freework-img" /></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -27,8 +27,8 @@
           </ul>
         </li>
         @else
-          <a href="#" class="header-link-signup">SIGN UP</a>
-          <a href="#" class="header-link-login">LOGIN</a>
+          <a href="{{ route('register') }}" class="header-link-signup glyphicon">SIGN UP</a>
+          <a href="{{ route('login') }}" class="header-link-login">LOGIN</a>
         @endif
       </ul>
     </div><!-- /.navbar-collapse -->

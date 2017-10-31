@@ -4,7 +4,7 @@
     @include('partials._head')
   </head>
 
-  <body class="body-image">
+  <body> <!-- class="body-image"> -->
 
     @include('partials._nav')
       
