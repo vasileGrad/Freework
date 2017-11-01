@@ -8,8 +8,11 @@
 		<div class="col-md-6 col-md-offset-3 form-spacing-top">
 			{!! Form::open() !!}
 
-				{{ Form::label('name', "Name:") }}
-				{{ Form::text('name', null, ['class' => 'form-control']) }}
+				{{ Form::label('first_name', "First Name:") }}
+				{{ Form::text('first_name', null, ['class' => 'form-control']) }}
+
+				{{ Form::label('last_name', "Last Name:") }}
+				{{ Form::text('last_name', null, ['class' => 'form-control']) }}
 
 				{{ Form::label('email', 'Email:') }}
 				{{ Form::email('email', null, ['class' => 'form-control']) }}
@@ -24,8 +27,6 @@
 					{{ Form::submit('Register', ['class' => 'btn btn-primary btn-block form-spacing-top']) }}
 				</div>
 				
-
-
 			{!! Form::close() !!}
 		</div>
 	</div>
