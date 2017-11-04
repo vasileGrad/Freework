@@ -23,9 +23,10 @@
 				{{ Form::label('password_confirmation', 'Confirm Password:') }}
 				{{ Form::password('password_confirmation', ['class' => 'form-control']) }}
 
-				<div class="col-md-6 col-md-offset-3">
-					{{ Form::submit('Register', ['class' => 'btn btn-primary btn-block form-spacing-top']) }}
-				</div>
+				<br>
+				{{ Form::submit('Register', ['class' => 'btn btn-primary btn-block']) }}
+
+				<p class="br-br">Already have an account? <b><a href="{{ route('login')}}">Log In</a></b></p>
 				
 			{!! Form::close() !!}
 		</div>

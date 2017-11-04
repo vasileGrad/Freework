@@ -4,12 +4,12 @@
     @include('partials._head')
   </head>
 
+  <!-- Show the body-image if the you are on the main page -->
   @if(Auth::check() || Route::current()->getName() == 'login' || Route::current()->getName() == 'register')
     <body>
   @else
     <body class="body-image">
   @endif
-  <!-- class="body-image"> -->
 
     @include('partials._nav')
       
