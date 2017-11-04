@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'PagesController@getIndex');
+Route::get('/', 'PagesController@getIndex')->name('main');
 
 // Authentication Routes
 Route::get('auth/login', 'Auth\LoginController@showLoginForm')->name('login');

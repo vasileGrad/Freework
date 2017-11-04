@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-        <a href="#"><img src="/images/Freework_logo.png" class="freework-img" /></a>
+        <a href="{{ route('main') }}"><img src="/images/Freework_logo.png" class="freework-img" /></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
