@@ -4,12 +4,19 @@
     @include('partials._head')
   </head>
 
-  <body> <!-- class="body-image"> -->
+  @if(Auth::check() || Route::current()->getName() == 'login' || Route::current()->getName() == 'register')
+    <body>
+  @else
+    <body class="body-image">
+  @endif
+  <!-- class="body-image"> -->
 
     @include('partials._nav')
       
     <!-- Build the main body -->
+
     <div class="container">
+
       @include('partials._messages')
 
       @yield('content')
