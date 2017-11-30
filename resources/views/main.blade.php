@@ -5,7 +5,7 @@
   </head>
 
   <!-- Show the body-image if the you are on the main page -->
-  @if(Auth::check() || Route::current()->getName() == 'login' || Route::current()->getName() == 'register')
+  @if(Auth::check() || Route::current()->getName() != 'main')
     <body>
   @else
     <body class="body-image">

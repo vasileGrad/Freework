@@ -25,10 +25,8 @@
         </li>
         @else
           
-          <!--
-            <a href="{{ route('register') }}" class="header-link-signup glyphicon">SIGN UP</a>
-            <a href="{{ route('login') }}" class="header-link-login">LOGIN</a>
-          -->
+          <!-- I must complete something here -->
+          
         @endif
       </ul>
     </div><!-- /.navbar-collapse -->
